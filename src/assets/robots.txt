@@ -1,0 +1,8 @@
+User-agent: *
+Allow: / 
+Disallow: /theme/
+Disallow: /api/
+Disallow: /server/
+Disallow: /vendors/
+Disallow: /website/
+Sitemap: https://www.asmobisoft.com/sitemap.xml

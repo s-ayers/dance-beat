@@ -1,0 +1,121 @@
+<section id="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 ">
+        <div class="contact-info pull-left">
+          <ul>
+            <li><i class="fa fa-phone"></i> (815) 582-0485</li>
+            <li>
+              <i class="fa fa-clock-o"></i> Mon - Fri: 9:00 AM - 9:00 PM Sat -
+              Sun: Closed
+            </li>
+          </ul>
+        </div>
+        <!-- /.contact-info -->
+        <div class="social">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/dancebeatdance/" target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.social -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End top bar -->
+
+<!--header start-->
+<header>
+  <!-- Start Navigation -->
+  <div class="wrap-sticky" style="height: 100px;">
+    <nav class="navbar navbar-default navbar-sticky bootsnav on no-full">
+      <div class="container">
+        <!-- Start Header Navigation -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#navbar-menu"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand" [routerLink]="['/']"
+            ><img src="assets/images/logo.png" class="logo logo-scrolled" alt=""
+          /></a>
+        </div>
+        <!-- End Header Navigation -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <ul class="nav navbar-nav navbar-right" data-in="" data-out="">
+            <li><a [routerLink]="['/']">Home</a></li>
+            <li><a [routerLink]="['/about']">About Us</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Pages</a
+              >
+              <ul class="dropdown-menu animated">
+                <li><a [routerLink]="['/team']">Team</a></li>
+
+                <li><a [routerLink]="['/gallery']">Gallery</a></li>
+
+                <li><a [routerLink]="['/event']">Event</a></li>
+                <li><a [routerLink]="['/faq']">Faq</a></li>
+                <li><a [routerLink]="['/testimonial']">Testimonials</a></li>
+                <li><a [routerLink]="['/registration']">Registration</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >services</a
+              >
+              <ul class="dropdown-menu animated">
+                <li><a [routerLink]="['/dance-classes']">dance classes</a></li>
+                <li>
+                  <a [routerLink]="['/dance-classes']">Private classes</a>
+                </li>
+              </ul>
+            </li>
+            <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >blogs</a
+              >
+              <ul
+                class="dropdown-menu animated"
+                style="display: none; opacity: 1;"
+              >
+                <li>
+                  <a href="/blog-right-sidebar.html">Blog Right Sidebar</a>
+                </li>
+                <li>
+                  <a href="/blog-left-sidebar.html">Blog Left Sidebar</a>
+                </li>
+                <li><a href="/blog-details.html">Blog Detail</a></li>
+              </ul>
+            </li> -->
+            <li><a [routerLink]="['/contact']">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </div>
+  <!-- End Navigation -->
+  <div class="clearfix"></div>
+</header>
+<!--header end-->
