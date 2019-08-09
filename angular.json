@@ -33,12 +33,12 @@
               "src/assets/scripts/jquery.min.js",
               "src/assets/scripts/jquery-ui.js",
               "src/assets/scripts/jquery.fancybox.pack.js",
-              "src/assets/scripts/isotope.js",
               "src/assets/scripts/plugins.js",
               "src/assets/scripts/bootstrap.min.js",
               "src/assets/scripts/owl.carousel.min.js",
               "src/assets/scripts/theme.js",
               "src/assets/scripts/gallery.js",
+              "src/assets/scripts/isotope.js",
               "src/assets/scripts/wow.js"
             ]
           },
