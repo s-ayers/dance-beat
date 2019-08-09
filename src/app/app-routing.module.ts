@@ -1,59 +1,59 @@
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-import { HomeComponent } from "./home/home.component";
-import { FaqComponent } from "./faq/faq.component";
-import { AboutComponent } from "./about/about.component";
-import { TeamComponent } from "./team/team.component";
-import { TestimonialComponent } from "./testimonial/testimonial.component";
-import { ContactComponent } from "./contact/contact.component";
-import { GalleryComponent } from "./gallery/gallery.component";
-import { EventComponent } from "./event/event.component";
-import { RegistrationComponent } from "./registration/registration.component";
-import { DanceClassesComponent } from "./dance-classes/dance-classes.component";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { FaqComponent } from './faq/faq.component';
+import { AboutComponent } from './about/about.component';
+import { TeamComponent } from './team/team.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
+import { ContactComponent } from './contact/contact.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { EventComponent } from './event/event.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { DanceClassesComponent } from './dance-classes/dance-classes.component';
 
 const routes: Routes = [
   {
-    path: "",
+    path: '',
     component: HomeComponent
   },
   {
-    path: "about",
+    path: 'about',
     component: AboutComponent
   },
   {
-    path: "team",
+    path: 'team',
     component: TeamComponent
   },
   {
-    path: "event",
+    path: 'event',
     component: EventComponent
   },
   {
-    path: "dance-classes",
+    path: 'dance-classes',
     component: DanceClassesComponent
   },
   {
-    path: "testimonial",
+    path: 'testimonial',
     component: TestimonialComponent
   },
   {
-    path: "faq",
+    path: 'faq',
     component: FaqComponent
   },
   {
-    path: "contact",
+    path: 'contact',
     component: ContactComponent
   },
   {
-    path: "gallery",
+    path: 'gallery',
     component: GalleryComponent
   },
   {
-    path: "registration",
+    path: 'registration',
     component: RegistrationComponent
   },
   {
-    path: "*",
+    path: '*',
     component: HomeComponent
   }
 ];

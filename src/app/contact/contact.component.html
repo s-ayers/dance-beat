@@ -23,7 +23,7 @@
     <div class="contact-form-container">
       <div class="row">
         <div class="col-md-7 col-sm-6 col-xs-12 pull-right">
-          <form action="inc/sendemail.php" class="contact-form">
+          <!-- <form action="inc/sendemail.php" class="contact-form">
             <p><input type="text" name="name" placeholder="Name" /></p>
             <p><input type="text" name="email" placeholder="Email" /></p>
             <p><input type="text" name="subject" placeholder="Subject" /></p>
@@ -31,7 +31,23 @@
             <button type="submit" class="theme-btn btn-lg">
               <span>Submit Now</span>
             </button>
-          </form>
+          </form> -->
+          <!-- Start Map Section -->
+          <div class="container-fluid">
+            <div class="map-column col-md-12 col-sm-6 col-xs-12">
+              <div class="inner-box">
+                <div class="map-outer">
+                  <!--Map Canvas-->
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.6841961919677!2d-88.20884708468883!3d41.44607360031815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e88601767955f%3A0xa23cfc7c4bd68721!2s24453+E+Eames+St%2C+Channahon%2C+IL+60410%2C+USA!5e0!3m2!1sen!2sin!4v1565391008035!5m2!1sen!2sin"
+                    width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Map Section -->
+
         </div>
         <div class="col-md-5 col-sm-6 col-xs-12">
           <div class="tt-contact">
@@ -44,9 +60,9 @@
             <div class="tt-contact-info">
               <div class="simple-text">
                 <p>
-                  Lorance Road 542B,<br />
-                  A 7 Sector 10,<br />
-                  Wordwide Country
+                  24453 E. Eames St.
+                  <br />
+                  <span>Channahon, Illinois 60410</span>
                 </p>
               </div>
             </div>
@@ -62,7 +78,7 @@
 
             <div class="tt-contact-info">
               <div class="simple-text">
-                <p>+91 120 4255611, <br />+91 120 4585611</p>
+                <p>{{phone}}</p>
               </div>
             </div>
           </div>
@@ -77,7 +93,7 @@
             <div class="tt-contact-info">
               <div class="simple-text">
                 <p>
-                  info@themelab15.com
+                  {{email}}
                 </p>
               </div>
             </div>
@@ -90,22 +106,3 @@
     </div>
   </div>
 </div>
-
-<!-- Start Map Section -->
-<div class="container-fluid">
-  <div class="map-column col-md-12 col-sm-6 col-xs-12">
-    <div class="inner-box">
-      <div class="map-outer">
-        <!--Map Canvas-->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805196.5079038654!2d144.4927068996644!3d-37.97015422631366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne+VIC%2C+Australia!5e0!3m2!1sen!2sin!4v1495807350985"
-          width="100%"
-          height="450"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End Map Section -->
