@@ -10,6 +10,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { EventComponent } from './event/event.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { DanceClassesComponent } from './dance-classes/dance-classes.component';
+import * as site from './app.json';
 
 const routes: Routes = [
   {
@@ -20,43 +21,64 @@ const routes: Routes = [
     path: 'about',
     component: AboutComponent
   },
-  {
-    path: 'team',
-    component: TeamComponent
-  },
-  {
-    path: 'event',
-    component: EventComponent
-  },
+
   {
     path: 'dance-classes',
     component: DanceClassesComponent
   },
-  {
-    path: 'testimonial',
-    component: TestimonialComponent
-  },
-  {
-    path: 'faq',
-    component: FaqComponent
-  },
+
   {
     path: 'contact',
     component: ContactComponent
   },
-  {
-    path: 'gallery',
-    component: GalleryComponent
-  },
-  {
-    path: 'registration',
-    component: RegistrationComponent
-  },
+
   {
     path: '*',
     component: HomeComponent
   }
 ];
+
+if (site.features.faq) {
+  routes.push({
+    path: 'faq',
+    component: FaqComponent
+  });
+}
+
+if (site.features.team) {
+  routes.push({
+    path: 'team',
+    component: TeamComponent
+  });
+}
+
+if (site.features.testimonial) {
+  routes.push({
+    path: 'testimonial',
+    component: TestimonialComponent
+  });
+}
+
+if (site.features.registration) {
+  routes.push({
+    path: 'registration',
+    component: RegistrationComponent
+  });
+}
+
+if (site.features.events) {
+  routes.push({
+    path: 'event',
+    component: EventComponent
+  });
+}
+
+if (site.features.gallery) {
+  routes.push({
+    path: 'gallery',
+    component: GalleryComponent
+  });
+}
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

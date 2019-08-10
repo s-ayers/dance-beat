@@ -48,10 +48,10 @@
     </div>
 
     <div class="social-links-footer">
-      <a href="#"> <i class="fa fa-facebook-f"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="{{facebook}}"> <i class="fa fa-facebook-f"></i></a>
+      <!-- <a href="#"><i class="fa fa-twitter"></i></a>
       <a href="#"><i class="fa fa-google"></i></a>
-      <a href="#"> <i class="fa fa-linkedin"></i></a>
+      <a href="#"> <i class="fa fa-linkedin"></i></a> -->
     </div>
     <!-- social-link -->
 
@@ -59,16 +59,16 @@
       <ul>
         <li><a [routerLink]="['/']">Home</a></li>
         <li><a [routerLink]="['/about']">About Us</a></li>
-        <li><a [routerLink]="['/team']">Dance Teams</a></li>
-        <li><a href="#">Schedule</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a [routerLink]="['/dance-classes']">Group Classes</a></li>
-        <li><a href="#">News &amp; Events</a></li>
-        <li><a href="#">Location</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a [routerLink]="['/testimonial']">Testimonials</a></li>
+        <li *ngIf="features.team"><a [routerLink]="['/team']">Dance Teams</a></li>
+        <!-- <li><a href="#">Schedule</a></li> -->
+        <!-- <li><a href="#">Pricing</a></li> -->
+        <li *ngIf="features.services"><a [routerLink]="['/dance-classes']">Group Classes</a></li>
+        <li *ngIf="features.events"><a href="#">News &amp; Events</a></li>
+        <!-- <li><a href="#">Location</a></li> -->
+        <li *ngIf="features.blog"><a href="#">Blog</a></li>
+        <li *ngIf="features.testimonial"><a [routerLink]="['/testimonial']">Testimonials</a></li>
         <li><a [routerLink]="['/contact']">Contact Us</a></li>
-        <li><a href="#">Privacy Policy</a></li>
+        <!-- <li><a href="#">Privacy Policy</a></li> -->
       </ul>
     </div>
     <div class="footer-btm">

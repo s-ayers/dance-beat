@@ -15,9 +15,9 @@
         <div class="social">
           <ul>
             <li>
-              <a href="https://www.facebook.com/dancebeatdance/" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="{{facebook}}" target="_blank"><i class="fa fa-facebook"></i></a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
             </li>
             <li>
@@ -25,7 +25,7 @@
             </li>
             <li>
               <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <!-- /.social -->
@@ -57,21 +57,21 @@
             <li><a [routerLink]="['/']">Home</a></li>
             <li><a [routerLink]="['/about']">About Us</a></li>
 
-            <li class="dropdown">
+            <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-              <ul class="dropdown-menu animated">
-                <li><a [routerLink]="['/team']">Team</a></li>
+              <ul class="dropdown-menu animated"> -->
+            <li *ngIf="features.team"><a [routerLink]="['/team']">Team</a></li>
 
-                <li><a [routerLink]="['/gallery']">Gallery</a></li>
+            <li *ngIf="features.gallery"><a [routerLink]="['/gallery']">Gallery</a></li>
 
-                <li><a [routerLink]="['/event']">Event</a></li>
-                <li><a [routerLink]="['/faq']">Faq</a></li>
-                <li><a [routerLink]="['/testimonial']">Testimonials</a></li>
-                <li><a [routerLink]="['/registration']">Registration</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">services</a>
+            <li *ngIf="features.events"><a [routerLink]="['/event']">Event</a></li>
+            <li *ngIf="features.faq"><a [routerLink]="['/faq']">Faq</a></li>
+            <li *ngIf="features.testimonial"><a [routerLink]="['/testimonial']">Testimonials</a></li>
+            <li *ngIf="features.registration"><a [routerLink]="['/registration']">Registration</a></li>
+            <!-- </ul>
+            </li> -->
+            <li *ngIf="features.services" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Classes</a>
               <ul class="dropdown-menu animated">
                 <li><a [routerLink]="['/dance-classes']">dance classes</a></li>
                 <li>
