@@ -33,52 +33,80 @@ const routes: Routes = [
   },
 
   {
+    path: 'gallery',
+    component: GalleryComponent
+  },
+  {
+    path: 'faq',
+    component: FaqComponent
+  },
+
+  {
+    path: 'team',
+    component: TeamComponent
+  },
+  {
+    path: 'testimonial',
+    component: TestimonialComponent
+  },
+
+  {
+    path: 'registration',
+    component: RegistrationComponent
+  },
+
+  {
+    path: 'event',
+    component: EventComponent
+  },
+
+  {
     path: '*',
     component: HomeComponent
   }
 ];
 
-if (site.features.faq) {
-  routes.push({
-    path: 'faq',
-    component: FaqComponent
-  });
-}
+// if (site.features.faq) {
+//   routes.push({
+//     path: 'faq',
+//     component: FaqComponent
+//   });
+// }
 
-if (site.features.team) {
-  routes.push({
-    path: 'team',
-    component: TeamComponent
-  });
-}
+// if (site.features.team) {
+//   routes.push({
+//     path: 'team',
+//     component: TeamComponent
+//   });
+// }
 
-if (site.features.testimonial) {
-  routes.push({
-    path: 'testimonial',
-    component: TestimonialComponent
-  });
-}
+// if (site.features.testimonial) {
+//   routes.push({
+//     path: 'testimonial',
+//     component: TestimonialComponent
+//   });
+// }
 
-if (site.features.registration) {
-  routes.push({
-    path: 'registration',
-    component: RegistrationComponent
-  });
-}
+// if (site.features.registration) {
+//   routes.push({
+//     path: 'registration',
+//     component: RegistrationComponent
+//   });
+// }
 
-if (site.features.events) {
-  routes.push({
-    path: 'event',
-    component: EventComponent
-  });
-}
+// if (site.features.events) {
+//   routes.push({
+//     path: 'event',
+//     component: EventComponent
+//   });
+// }
 
-if (site.features.gallery) {
-  routes.push({
-    path: 'gallery',
-    component: GalleryComponent
-  });
-}
+// if (site.features.gallery) {
+//   routes.push({
+//     path: 'gallery',
+//     component: GalleryComponent
+//   });
+// }
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
