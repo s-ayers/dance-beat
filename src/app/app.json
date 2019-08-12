@@ -10,11 +10,12 @@
     "events": false,
     "gallery": false,
     "faq": false,
-    "instructor": true,
+    "instructor": false,
     "testimonial": false,
-    "registration": true,
+    "registration": false,
     "team": false,
-    "video": true,
-    "services": true
+    "video": false,
+    "services": true,
+    "classes": false
   }
 }
