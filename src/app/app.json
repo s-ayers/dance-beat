@@ -7,13 +7,13 @@
   },
   "features": {
     "blog": false,
-    "events": true,
-    "gallery": true,
-    "faq": true,
+    "events": false,
+    "gallery": false,
+    "faq": false,
     "instructor": true,
-    "testimonial": true,
+    "testimonial": false,
     "registration": true,
-    "team": true,
+    "team": false,
     "video": true,
     "services": true
   }
