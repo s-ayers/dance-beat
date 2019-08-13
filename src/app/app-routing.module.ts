@@ -17,48 +17,48 @@ const routes: Routes = [
     path: '',
     component: HomeComponent
   },
-  {
-    path: 'about',
-    component: AboutComponent
-  },
+  // {
+  //   path: 'about',
+  //   component: AboutComponent
+  // },
 
-  {
-    path: 'dance-classes',
-    component: DanceClassesComponent
-  },
+  // {
+  //   path: 'dance-classes',
+  //   component: DanceClassesComponent
+  // },
 
   {
     path: 'contact',
     component: ContactComponent
   },
 
-  {
-    path: 'gallery',
-    component: GalleryComponent
-  },
-  {
-    path: 'faq',
-    component: FaqComponent
-  },
+  // {
+  //   path: 'gallery',
+  //   component: GalleryComponent
+  // },
+  // {
+  //   path: 'faq',
+  //   component: FaqComponent
+  // },
 
-  {
-    path: 'team',
-    component: TeamComponent
-  },
-  {
-    path: 'testimonial',
-    component: TestimonialComponent
-  },
+  // {
+  //   path: 'team',
+  //   component: TeamComponent
+  // },
+  // {
+  //   path: 'testimonial',
+  //   component: TestimonialComponent
+  // },
 
-  {
-    path: 'registration',
-    component: RegistrationComponent
-  },
+  // {
+  //   path: 'registration',
+  //   component: RegistrationComponent
+  // },
 
-  {
-    path: 'event',
-    component: EventComponent
-  },
+  // {
+  //   path: 'event',
+  //   component: EventComponent
+  // },
 
   {
     path: '*',

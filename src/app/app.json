@@ -1,6 +1,6 @@
 {
   "title": "Dance Beat",
-  "phone": "(815) 582-0485",
+  "phone": "8155820485",
   "email": "dancebeat2019@gmail.com",
   "social media": {
     "facebook": "https://www.facebook.com/dancebeatdance/"
@@ -16,6 +16,7 @@
     "team": false,
     "video": false,
     "services": true,
-    "classes": false
+    "classes": false,
+    "welcome": false
   }
 }

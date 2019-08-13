@@ -16,6 +16,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { EventComponent } from './event/event.component';
 import { DanceClassesComponent } from './dance-classes/dance-classes.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { TelephoneComponent } from './components/telephone/telephone.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { RegistrationComponent } from './registration/registration.component';
     GalleryComponent,
     EventComponent,
     DanceClassesComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    TelephoneComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],

@@ -21,13 +21,13 @@
             "aot": false,
             "assets": ["src/favicon.ico", "src/assets/images"],
             "styles": [
-              "src/styles.css",
               "src/assets/css/bootstrap.css",
               "src/assets/css/owl.carousel.css",
               "src/assets/css/owl.theme.default.min.css",
               "src/assets/css/flaticon.css",
               "src/assets/css/style.css",
-              "src/assets/css/responsive.css"
+              "src/assets/css/responsive.css",
+              "src/styles.css"
             ],
             "scripts": [
               "src/assets/scripts/jquery.min.js",
