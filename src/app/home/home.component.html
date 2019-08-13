@@ -111,7 +111,7 @@
                     <div class="phn-info">
                         <div class="icon"><i class="fa fa-phone"></i></div>
                         <div class="p-num">
-                            <a href="/#">(815) 582-0485</a>
+                            <app-telephone></app-telephone>
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
 <!--End phone-bar section-->
 
 <!--Start welcome section-->
-<section id="welcome">
+<section *ngIf="features.welecome" id="welcome">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 pull-right">
@@ -158,33 +158,23 @@
             <div class="col-lg-8 col-md-8">
                 <div class="heading">
                     <h1>
-                        We offer-adults <span class="color-pink">to achieve the best</span>
+                        <span class="color-pink">Classes</span> We Offer
                     </h1>
                 </div>
                 <ul class="achieve-list clearfix">
+
+                    <li>
+                        <div class="icon">
+                            <div class="icon-5"></div>
+                        </div>
+                        <span class="achi-name">Mommy &amp; me</span>
+                    </li>
+
                     <li>
                         <div class="icon">
                             <div class="icon-7"></div>
                         </div>
                         <span class="achi-name">Ballet</span>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <div class="icon-8"></div>
-                        </div>
-                        <span class="achi-name">Kids Zumba</span>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <div class="icon-9"></div>
-                        </div>
-                        <span class="achi-name">Chinese dance</span>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <div class="icon-10"></div>
-                        </div>
-                        <span class="achi-name">Jazz</span>
                     </li>
                     <li>
                         <div class="icon">
@@ -194,9 +184,45 @@
                     </li>
                     <li>
                         <div class="icon">
+                            <div class="icon-10"></div>
+                        </div>
+                        <span class="achi-name">Jazz</span>
+                    </li>
+
+
+                    <li>
+                        <div class="icon">
+                            <div class="icon-8"></div>
+                        </div>
+                        <span class="achi-name">Tap</span>
+                    </li>
+
+
+
+                    <li>
+                        <div class="icon">
                             <div class="icon-12"></div>
                         </div>
                         <span class="achi-name">Hip-hop</span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <div class="icon-6"></div>
+                        </div>
+                        <span class="achi-name">Tumbling</span>
+                    </li>
+
+                    <!-- <li>
+                        <div class="icon">
+                            <div class="icon-2"></div>
+                        </div>
+                        <span class="achi-name">Ballroom</span>
+                    </li> -->
+                    <li>
+                        <div class="icon">
+                            <div class="icon-1"></div>
+                        </div>
+                        <span class="achi-name">Musical Theater</span>
                     </li>
                 </ul>
             </div>

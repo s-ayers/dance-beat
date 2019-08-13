@@ -40,7 +40,9 @@
         <div class="col-md-3 col-sm-3">
           <div class="info-bx">
             <i class="fa fa-phone" aria-hidden="true"></i>
-            <p>CALL US:<span>{{phone}}</span></p>
+            <p>CALL US:<span>
+                <app-telephone></app-telephone>
+              </span></p>
           </div>
         </div>
         <!-- End col -->
@@ -58,7 +60,7 @@
     <div class="quick-links">
       <ul>
         <li><a [routerLink]="['/']">Home</a></li>
-        <li><a [routerLink]="['/about']">About Us</a></li>
+        <li *ngIf="false"><a [routerLink]="['/about']">About Us</a></li>
         <li *ngIf="features.team"><a [routerLink]="['/team']">Dance Teams</a></li>
         <!-- <li><a href="#">Schedule</a></li> -->
         <!-- <li><a href="#">Pricing</a></li> -->

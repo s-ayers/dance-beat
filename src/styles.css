@@ -3,3 +3,10 @@
   border-left: 0 !important;
   border-right: 0 !important;
 }
+#topbar a {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+#services {
+  padding-top: 0 !important;
+}
