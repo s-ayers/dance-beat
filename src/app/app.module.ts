@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -17,9 +19,11 @@ import { EventComponent } from './event/event.component';
 import { DanceClassesComponent } from './dance-classes/dance-classes.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { TelephoneComponent } from './components/telephone/telephone.component';
+import { TeamItemComponent } from './team/item/item.component';
 
 @NgModule({
   declarations: [
+    EscapeHtmlPipe,
     AppComponent,
     HeaderComponent,
     HomeComponent,
@@ -33,7 +37,8 @@ import { TelephoneComponent } from './components/telephone/telephone.component';
     EventComponent,
     DanceClassesComponent,
     RegistrationComponent,
-    TelephoneComponent
+    TelephoneComponent,
+    TeamItemComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],

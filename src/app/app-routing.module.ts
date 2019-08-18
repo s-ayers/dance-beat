@@ -41,10 +41,10 @@ const routes: Routes = [
   //   component: FaqComponent
   // },
 
-  // {
-  //   path: 'team',
-  //   component: TeamComponent
-  // },
+  {
+    path: 'team',
+    component: TeamComponent
+  },
   // {
   //   path: 'testimonial',
   //   component: TestimonialComponent
