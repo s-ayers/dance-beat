@@ -1,0 +1,22 @@
+<div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+    <div class="team-single">
+        <div class="team-image-holder">
+            <img [src]="teacher.image" alt="" />
+            <!-- <div class="team-overlay">
+                <div class="social-links">
+                    <a href=""><i class="fa fa-facebook mysocial_style"></i></a>
+                    <a href=""><i class="fa fa-twitter mysocial_style"></i></a>
+                    <a href=""><i class="fa fa-google-plus mysocial_style"></i></a>
+                    <a href=""><i class="fa fa-linkedin mysocial_style"></i></a>
+                </div>
+            </div> -->
+        </div>
+        <div class="player-name text-center">
+            <h5>{{teacher.name}}</h5>
+            <div [innerHTML]="teacher.description | keepHtml"></div>
+
+        </div>
+    </div>
+</div>
+<!--End Single team-->
+<div class="spacer-30"></div>

@@ -13,7 +13,7 @@
     "instructor": false,
     "testimonial": false,
     "registration": false,
-    "team": false,
+    "team": true,
     "video": false,
     "services": true,
     "classes": false,
