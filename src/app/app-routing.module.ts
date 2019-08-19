@@ -10,6 +10,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { EventComponent } from './event/event.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { DanceClassesComponent } from './dance-classes/dance-classes.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 import * as site from './app.json';
 
 const routes: Routes = [
@@ -17,10 +18,10 @@ const routes: Routes = [
     path: '',
     component: HomeComponent
   },
-  // {
-  //   path: 'about',
-  //   component: AboutComponent
-  // },
+  {
+    path: 'about',
+    component: AboutComponent
+  },
 
   // {
   //   path: 'dance-classes',
@@ -45,6 +46,10 @@ const routes: Routes = [
     path: 'team',
     component: TeamComponent
   },
+  // {
+  //   path: 'schedule',
+  //   component: ScheduleComponent
+  // },
   // {
   //   path: 'testimonial',
   //   component: TestimonialComponent

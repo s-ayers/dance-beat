@@ -19,7 +19,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
-            "assets": ["src/favicon.ico", "src/assets/images"],
+            "assets": [
+              "src/favicon.ico",
+              "src/robots.txt",
+              "src/assets/images"
+            ],
             "styles": [
               "src/assets/css/bootstrap.css",
               "src/assets/css/owl.carousel.css",
