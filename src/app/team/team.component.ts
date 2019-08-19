@@ -11,7 +11,5 @@ export class TeamComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
-    console.log(this.teachers);
-  }
+  ngOnInit() {}
 }

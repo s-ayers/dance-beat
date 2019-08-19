@@ -20,6 +20,7 @@ import { DanceClassesComponent } from './dance-classes/dance-classes.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { TelephoneComponent } from './components/telephone/telephone.component';
 import { TeamItemComponent } from './team/item/item.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { TeamItemComponent } from './team/item/item.component';
     DanceClassesComponent,
     RegistrationComponent,
     TelephoneComponent,
-    TeamItemComponent
+    TeamItemComponent,
+    ScheduleComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
