@@ -22,6 +22,7 @@
             "assets": [
               "src/favicon.ico",
               "src/robots.txt",
+              "src/CNAME",
               "src/assets/images"
             ],
             "styles": [
