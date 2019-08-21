@@ -1,7 +1,12 @@
 <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
     <div class="team-single">
         <div class="team-image-holder">
-            <img [src]="teacher.image" alt="" />
+            ​<picture>
+                <source *ngIf="teacher.webp" [srcset]="teacher.webp" type="image/webp">
+                <source [srcset]="teacher.image" type="image/jpeg">
+                <img [src]="teacher.image" alt="picture of {{teacher.name}}" />
+            </picture>
+
             <!-- <div class="team-overlay">
                 <div class="social-links">
                     <a href=""><i class="fa fa-facebook mysocial_style"></i></a>
