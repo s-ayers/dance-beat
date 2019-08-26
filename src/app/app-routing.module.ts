@@ -46,10 +46,10 @@ const routes: Routes = [
     path: 'team',
     component: TeamComponent
   },
-  // {
-  //   path: 'schedule',
-  //   component: ScheduleComponent
-  // },
+  {
+    path: 'schedule',
+    component: ScheduleComponent
+  },
   // {
   //   path: 'testimonial',
   //   component: TestimonialComponent

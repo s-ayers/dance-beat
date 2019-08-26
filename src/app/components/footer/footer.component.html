@@ -61,8 +61,8 @@
       <ul>
         <li><a [routerLink]="['/']">Home</a></li>
         <li><a [routerLink]="['/about']">About Us</a></li>
-        <li *ngIf="features.team"><a [routerLink]="['/team']">Dance Teams</a></li>
-        <!-- <li><a href="#">Schedule</a></li> -->
+        <li *ngIf="features.team"><a [routerLink]="['/team']">Team</a></li>
+        <li><a [routerLink]="['/team']">Schedule</a></li>
         <!-- <li><a href="#">Pricing</a></li> -->
         <li *ngIf="features.classes"><a [routerLink]="['/dance-classes']">Group Classes</a></li>
         <li *ngIf="features.events"><a href="#">News &amp; Events</a></li>

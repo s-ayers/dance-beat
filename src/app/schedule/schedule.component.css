@@ -1,0 +1,114 @@
+thead,
+tbody th {
+  background-color: #f19797;
+  color: #fff;
+}
+
+tbody > tr:nth-child(even) {
+  background-color: #d9e1e9;
+}
+
+table > tbody td {
+  display: none;
+}
+table > thead th:nth-child(0) table > tbody td:nth-child(0) {
+  width: 20px;
+}
+
+table > thead tr.select th:nth-child(1) {
+  display: table-cell;
+}
+
+tr.static > th,
+tr.static {
+  display: none;
+}
+
+table.sunday > tbody td:nth-child(2),
+table.monday > tbody td:nth-child(3),
+table.tuesday > tbody td:nth-child(4),
+table.wednesday > tbody td:nth-child(5),
+table.thursday > tbody td:nth-child(6),
+table.friday > tbody td:nth-child(7),
+table.saturday > tbody td:nth-child(8) {
+  display: table-cell;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  tr.static {
+    display: table-row;
+  }
+
+  table.sunday tr.static > th:nth-child(1),
+  table.sunday tr.static > th:nth-child(3),
+  table.sunday tr.static > th:nth-child(4),
+  table.sunday > thead th:nth-child(4),
+  table.sunday > tbody td:nth-child(4),
+  table.monday tr.static > th:nth-child(1),
+  table.monday tr.static > th:nth-child(3),
+  table.monday tr.static > th:nth-child(4),
+  table.monday > thead th:nth-child(4),
+  table.monday > tbody td:nth-child(4),
+  table.tuesday tr.static > th:nth-child(1),
+  table.tuesday tr.static > th:nth-child(4),
+  table.tuesday tr.static > th:nth-child(5),
+  table.tuesday > thead th:nth-child(5),
+  table.tuesday > tbody td:nth-child(5),
+  table.wednesday tr.static > th:nth-child(1),
+  table.wednesday tr.static > th:nth-child(5),
+  table.wednesday tr.static > th:nth-child(6),
+  table.wednesday > thead th:nth-child(6),
+  table.wednesday > tbody td:nth-child(6),
+  table.thursday tr.static > th:nth-child(1),
+  table.thursday tr.static > th:nth-child(6),
+  table.thursday tr.static > th:nth-child(7),
+  table.thursday > thead th:nth-child(7),
+  table.thursday > tbody td:nth-child(7),
+  table.friday tr.static > th:nth-child(1),
+  table.friday tr.static > th:nth-child(7),
+  table.friday tr.static > th:nth-child(8),
+  table.friday > thead th:nth-child(8),
+  table.friday > tbody td:nth-child(8),
+  table.saturday tr.static > th:nth-child(1),
+  table.saturday tr.static > th:nth-child(7),
+  table.saturday tr.static > th:nth-child(8),
+  table.saturday > tbody td:nth-child(7) {
+    display: table-cell;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  table.sunday > thead th:nth-child(5),
+  table.sunday > tbody td:nth-child(5),
+  table.monday > thead th:nth-child(5),
+  table.monday > tbody td:nth-child(5),
+  table.tuesday > thead th:nth-child(6),
+  table.tuesday > tbody td:nth-child(6),
+  table.wednesday > thead th:nth-child(7),
+  table.wednesday > tbody td:nth-child(7),
+  table.thursday > thead th:nth-child(8),
+  table.thursday > tbody td:nth-child(8),
+  table.friday > thead th:nth-child(6),
+  table.friday > tbody td:nth-child(6),
+  table.saturday > thead th:nth-child(6),
+  table.saturday > tbody td:nth-child(6) {
+    display: table-cell;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  table tr.select {
+    display: none;
+  }
+  table > thead th,
+  table > tbody td {
+    display: table-cell;
+  }
+}

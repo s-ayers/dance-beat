@@ -1,3 +1,571 @@
-<iframe
-    src="https://calendar.google.com/calendar/b/2/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=YmluYXJ5YWxjaGVtaXN0Lm9yZ19pZGk4bzJhbGc1cWppcmUxam9uMDQxOHIzY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%239E69AF&amp;showTitle=0&amp;showNav=1&amp;showTabs=1&amp;mode=WEEK"
-    style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<div class="table-responsive">
+    <table class="table" [ngClass]="today">
+        <thead>
+            <tr class="static">
+                <th scope="col"></th>
+                <th scope="col">Sunday</th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+                <th scope="col">Saturday</th>
+            </tr>
+            <tr class="select">
+                <th scope="col"></th>
+                <th scope="col" colspan="3">
+
+                    <select (change)="setDay($event.target.value)">
+                        <option *ngFor="let day of days" [value]="day" [selected]="day === today"
+                            [disabled]="day === 'sunday'">
+                            {{day.charAt(0).toUpperCase() + day.slice(1) + (day === 'sunday' ? ' (Closed)' : '') }}
+                        </option>
+
+                    </select>
+
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">9:00 am</th>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 1 Year old
+                        </li>
+                    </ul>
+
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 1 Year old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 1 Year old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 1 Year old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 1 Year old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 3 Years Old
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">10:00 am</th>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 2 Year Old
+                        </li>
+                    </ul>
+
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 2 Year Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 2 Year Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 2 Year Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 2 Year Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet/Jazz - Pre-Kinder
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">11:00 am</th>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 3 Years Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 3 Years Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 3 Years Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 3 Years Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 3 Years Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Tap/Hip Hop - Pre-Kinder
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">12:00 pm</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 1<sup>st</sup> - 2<sup>nd</sup> Grade
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">1:00 pm</th>
+                <td></td>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 1 Year old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 1 Year old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 1 Year old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Home School Dance
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 3<sup>rd</sup> - 5<sup>th</sup> Grade
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2:00 pm</th>
+                <td></td>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 2 Year Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 2 Year Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 2 Year Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Mommy & Me - 2 Year Old
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">3:00 pm</th>
+                <td></td>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 3 Years Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 3 Years Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 3 Years Old
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 3 Years Old
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">4:00 pm</th>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            Tap/Hip Hop - Pre-Kinder
+                        </li>
+                        <li>Rec Team</li>
+                        <li>Hip Hop - 1<sup>st</sup> - 2<sup>nd</sup> Grade</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Aerobatics - Advanced
+                        </li>
+                        <li>
+                            Tap - Sweets
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet/Jazz - Pre-Kinder
+                        </li>
+                        <li>
+                            Special Needs
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet/Jazz - Pre-Kinder
+                        </li>
+                        <li>
+                            Jazz - 1<sup>st</sup> - 2<sup>nd</sup> Grade
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - Sweets
+                        </li>
+                        <li>
+                            Tap/Hip Hop - Pre-Kinder
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">5:00 pm</th>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - Tweets
+                        </li>
+                        <li>Rec Team</li>
+                        <li>Hip Hop - 3<sup>rd</sup> - 5<sup>th</sup> Grade</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - Petites
+                        </li>
+                        <li>
+                            Hip Hop - Sweets
+                        </li>
+                        <li>
+                            Tap - Tweets
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 1<sup>st</sup> - 2<sup>nd</sup> Grade
+                        </li>
+                        <li>
+                            Special Needs
+                        </li>
+                        <li>
+                            Contemporary - 3<sup>rd</sup> - 5<sup>th</sup>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - Tweets
+                        </li>
+                        <li>
+                            Tap - 1<sup>st</sup> - 2<sup>nd</sup> Grade
+                        </li>
+                        <li>
+                            Hip Hop - Petites
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Jazz - Sweets
+                        </li>
+                        <li>
+                            Contemporary - Petites
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">6:00 pm</th>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            Musical Theater
+                        </li>
+                        <li>Rec Team</li>
+                        <li>Jazz - Tweets</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Hip Hop - Tweets
+                        </li>
+                        <li>
+                            Aerobatics - Intermediate
+                        </li>
+                        <li>
+                            Jazz - Petites
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - 3<sup>rd</sup> - 5<sup>th</sup> Grade
+                        </li>
+                        <li>
+                            Contemporary - 1<sup>st</sup> - 2<sup>nd</sup> Grade
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - Petites
+                        </li>
+                        <li>
+                            Tap - High School
+                        </li>
+                        <li>
+                            Contemporary - Tweets
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Tap - 3<sup>rd</sup> - 5<sup>th</sup> Grade
+                        </li>
+                        <li>
+                            Tap - Petites
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">7:00 pm</th>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - Elite
+                        </li>
+                        <li>Contemporary - Junior High</li>
+                        <li>Jazz - Heat</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Hip Hop - Elite
+                        </li>
+                        <li>
+                            Aerobatics - Beginner
+                        </li>
+                        <li>Tap - Heat</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - Elite
+                        </li>
+                        <li>Contemporary - Heat</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - Junior High
+                        </li>
+                        <li>Jazz - High School</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Jazz - 3<sup>rd</sup> - 5<sup>th</sup> Grade
+                        </li>
+                        <li>Jazz - Junior High</li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">8:00 pm</th>
+                <td></td>
+                <td>
+
+                    <ul>
+                        <li>
+                            Ballet - Heat
+                        </li>
+                        <li>Contemporary - High School</li>
+                        <li>Jazz - Elite</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Hip Hop - Heat
+                        </li>
+                        <li>Tap - Elite</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - Heat
+                        </li>
+                        <li>Hip Hop - High School</li>
+                        <li>Contemporary - Elite</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Ballet - High School
+                        </li>
+                        <li>Tap - Junior High</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Hip Hop - Junior High
+                        </li>
+
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
