@@ -15,10 +15,7 @@ table > thead th:nth-child(0) table > tbody td:nth-child(0) {
   width: 20px;
 }
 
-table > thead tr.select th:nth-child(1) {
-  display: table-cell;
-}
-
+tr.select > th:nth-child(1),
 tr.static > th,
 tr.static {
   display: none;
@@ -44,6 +41,7 @@ table.saturday > tbody td:nth-child(8) {
     display: table-row;
   }
 
+  tr.select > th:nth-child(1),
   table.sunday tr.static > th:nth-child(1),
   table.sunday tr.static > th:nth-child(3),
   table.sunday tr.static > th:nth-child(4),
