@@ -22,21 +22,11 @@ steps:
     workingDir: src/
 
 - task: Npm@1
-  displayName: 'Build Angular'
+  displayName: 'Lint Angular'
   inputs:
     command: custom
-    customCommand: run build -- --prod
+    customCommand: run lint --  --format=stylish
     workingDir: src/
-
-- task: PublishPipelineArtifact@0
-  inputs:
-    artifactName: 'angular'
-    targetPath: 'dist'
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: 'dist'
-    ArtifactName: angular2
 
 - task: Npm@1
   displayName: 'Test Angular'
@@ -63,12 +53,7 @@ steps:
     testResultsFormat: JUnit
     testResultsFiles: "**/TESTS*.xml"
 
-- task: Npm@1
-  displayName: 'Lint Angular'
-  inputs:
-    command: custom
-    customCommand: run lint --  --format=stylish
-    workingDir: src/
+
 
 - task: Npm@1
   displayName: 'E2E Test Angular'
@@ -85,3 +70,19 @@ steps:
     testRunTitle: Angular_E2E
     testResultsFormat: JUnit
     testResultsFiles: "**/junit*.xml"
+- task: Npm@1
+  displayName: 'Build Angular'
+  inputs:
+    command: custom
+    customCommand: run build -- --prod
+    workingDir: src/
+
+- task: PublishPipelineArtifact@0
+  inputs:
+    artifactName: 'angular'
+    targetPath: 'dist'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'dist'
+    ArtifactName: angular2
