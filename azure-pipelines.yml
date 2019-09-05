@@ -32,8 +32,8 @@ steps:
   displayName: 'Test Angular'
   inputs:
     command: custom
-    customCommand: run test
-    workingDir: src/
+    customCommand: run test -- --watch=false --code-coverage
+    workingDir: src/ 
 
 - task: PublishCodeCoverageResults@1
   displayName: 'Publish code coverage Angular results'
