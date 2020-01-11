@@ -40,7 +40,7 @@ steps:
   condition: succeededOrFailed()
   inputs:
     codeCoverageTool: Cobertura
-    summaryFileLocation: 'coverage/cobertura-coverage.xml'
+    summaryFileLocation: 'coverage/dance-beat/cobertura-coverage.xml'
     reportDirectory: coverage
     failIfCoverageEmpty: true
 
